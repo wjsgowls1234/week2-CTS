@@ -1,50 +1,56 @@
-# Discrete-Time Signal Generation in MATLAB
+# Continuous-Time Signal Generation in MATLAB
 
-This repository contains MATLAB code to generate and visualize six fundamental **discrete-time signals**.  
-The purpose of this project is to understand the mathematical definitions of these signals and how to represent them visually — a core skill for any **signal processing, data, or AI engineer**.
+This repository contains MATLAB code to generate and visualize several **fundamental continuous-time signals**.  
+The goal of this project is to understand the mathematical definitions of continuous signals and how to represent them visually, which is essential for **signal processing, communication systems, and control engineering**.
 
 ---
 
 ## 📌 Signals Implemented
 
-The `signals.m` script generates the following signals:
+The `continuous_signals.m` script generates the following signals:
 
-1. **Unit Impulse Signal**  
-   - A signal that is 1 at time `n = 0` and 0 everywhere else.  
 
-2. **Unit Step Signal**  
-   - A signal that is 1 for `n ≥ 0` and 0 for `n < 0`.  
+![CTS](./images/CTS_1)
+1. **Unit Impulse Signal (δ(t))**  
+   - A theoretical signal that is 0 everywhere except at `t = 0`, where it is undefined but integrates to 1.  
+   - Approximated in MATLAB for visualization.  
 
-3. **Unit Ramp Signal**  
-   - A signal that is equal to `n` for `n ≥ 0` and 0 for `n < 0`.  
+2. **Unit Step Signal (u(t))**  
+   - Defined as `u(t) = 0` for `t < 0`, and `u(t) = 1` for `t ≥ 0`.  
 
-4. **Exponential Signal**  
-   - A signal of the form `x[n] = a^n`.  
-   - This code uses a **decaying signal** (`a = 0.5`) for clear visualization.  
+3. **Unit Ramp Signal (r(t))**  
+   - Defined as `r(t) = 0` for `t < 0`, and `r(t) = t` for `t ≥ 0`.  
 
-5. **Signum Signal**  
-   - A signal that is `1` for positive `n`, `-1` for negative `n`, and `0` at `n = 0`.  
-
-6. **Sinc Signal**  
-   - A signal defined as:  
-
+4. **Exponential Signal (e^{at})**  
+   - General form:  
      \[
-     \text{sinc}(n) = \frac{\sin(\pi n)}{\pi n}
+     x(t) = e^{a t}
+     \]  
+   - The code provides both **decaying (`a < 0`)** and **growing (`a > 0`)** exponentials.  
+
+5. **Sinusoidal Signal (sin(ωt), cos(ωt))**  
+   - Defined as `sin(2πft)` or `cos(2πft)` for frequency `f`.  
+
+
+![CTS](./images/CTS_2)
+6. **Sinc Signal**  
+   - Defined as:  
+     \[
+     \text{sinc}(t) = \frac{\sin(\pi t)}{\pi t}
      \]  
 
 ---
 
 ## 📊 Simulation Results
 
-The script generates plots of all six signals, organized in a **3×2 grid** for easy comparison.  
+The script generates plots of all six continuous-time signals, organized in a **3×2 grid** for easy comparison.  
 
-*(Sample plots will appear here once the script is executed.)*
+*(Sample plots will appear here once the script is executed.)*  
 
 ---
 
 ## 🚀 How to Run the Code
 
-1. **Clone the Repository**  
-   Clone or download this repository to your local machine:
+1. **Clone the Repository**
    ```bash
    git clone https://github.com/your-username/week2-signals-matlab.git
