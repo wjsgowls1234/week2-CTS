@@ -10,7 +10,7 @@ The goal of this project is to understand the mathematical definitions of contin
 The `continuous_signals.m` script generates the following signals:
 
 
-![CTS](./image/CTS_1)
+![CTS](./image/CTS_1.png)
 1. **Unit Impulse Signal (δ(t))**  
    - A theoretical signal that is 0 everywhere except at `t = 0`, where it is undefined but integrates to 1.  
    - Approximated in MATLAB for visualization.  
@@ -32,7 +32,7 @@ The `continuous_signals.m` script generates the following signals:
    - Defined as `sin(2πft)` or `cos(2πft)` for frequency `f`.  
 
 
-![CTS](./image/CTS_2)
+![CTS](./image/CTS_2.png)
 6. **Sinc Signal**  
    - Defined as:  
      \[
