@@ -33,11 +33,11 @@ The `continuous_signals.m` script generates the following signals:
 
 
 ![CTS](./image/CTS_2.png)
-6. **Sinc Signal**  
-   - Defined as:  
-     \[
-     \text{sinc}(t) = \frac{\sin(\pi t)}{\pi t}
-     \]  
+6. **Sinc Signal**
+
+Defined as:
+
+`sinc(t) = sin(πt) / (πt)` 
 
 ---
 
