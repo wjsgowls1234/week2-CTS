@@ -33,6 +33,7 @@ The `continuous_signals.m` script generates the following signals:
 
 
 ![CTS](./image/CTS_2.png)
+
 6. **Sinc Signal**
 
 Defined as:
